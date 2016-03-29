@@ -1,0 +1,614 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"so",
+				"showPlot1"
+			],
+			[
+				"red",
+				"redBall"
+			],
+			[
+				"no",
+				"noReplacementSimulation"
+			],
+			[
+				"re",
+				"redBall"
+			],
+			[
+				"B",
+				"Bucket"
+			],
+			[
+				"e",
+				"eRobot"
+			],
+			[
+				"update",
+				"updatePositionAndClean"
+			],
+			[
+				"Ro",
+				"Robot"
+			],
+			[
+				"RandomWalk",
+				"RandomWalkRobotAvg"
+			],
+			[
+				"u",
+				"updatePositionAndClean"
+			],
+			[
+				"show",
+				"showPlot1"
+			],
+			[
+				"getN",
+				"getNumTiles"
+			],
+			[
+				"get",
+				"getX"
+			],
+			[
+				"robot",
+				"robotDirection"
+			],
+			[
+				"cu",
+				"currentPosition"
+			],
+			[
+				"se",
+				"setRobotDirection"
+			],
+			[
+				"set",
+				"setRobotPosition"
+			],
+			[
+				"getRo",
+				"getRobotDirection"
+			],
+			[
+				"getR",
+				"getRobotPosition"
+			],
+			[
+				"cleanT",
+				"cleanTileAtPosition"
+			],
+			[
+				"Pso",
+				"Position"
+			],
+			[
+				"is",
+				"isPositionInRoom"
+			],
+			[
+				"S",
+				"SilviosRoom"
+			],
+			[
+				"Re",
+				"RectangularRoom"
+			],
+			[
+				"T",
+				"True"
+			],
+			[
+				"rand",
+				"randomHeight"
+			],
+			[
+				"ran",
+				"randomWidth"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"say",
+				"says"
+			],
+			[
+				"s",
+				"stuff"
+			],
+			[
+				"pe",
+				"Person"
+			],
+			[
+				"best",
+				"bestList"
+			],
+			[
+				"sublis",
+				"getSublists"
+			],
+			[
+				"p",
+				"p"
+			],
+			[
+				"bes",
+				"bestList"
+			],
+			[
+				"sub",
+				"subList"
+			],
+			[
+				"ge",
+				"getSublists"
+			],
+			[
+				"val",
+				"values"
+			],
+			[
+				"a",
+				"append"
+			],
+			[
+				"temp",
+				"tempList"
+			],
+			[
+				"di",
+				"dict_inv"
+			],
+			[
+				"d",
+				"dict_inv"
+			],
+			[
+				"dict",
+				"dict_inv"
+			],
+			[
+				"keys",
+				"keys"
+			],
+			[
+				"dict_",
+				"dict_inv"
+			],
+			[
+				"values",
+				"values"
+			],
+			[
+				"Dict",
+				"Dict_temp"
+			],
+			[
+				"sort",
+				"sortedDict"
+			],
+			[
+				"inve",
+				"inv_list_keys"
+			],
+			[
+				"dic",
+				"dict_to_invet"
+			],
+			[
+				"inv_",
+				"inv_list_values"
+			],
+			[
+				"spe",
+				"species_types"
+			],
+			[
+				"num",
+				"num_species"
+			],
+			[
+				"ad",
+				"adopt_pet"
+			],
+			[
+				"sp",
+				"species"
+			],
+			[
+				"Ado",
+				"AdoptionCenter"
+			],
+			[
+				"decrypt",
+				"decrypt_story"
+			],
+			[
+				"en",
+				"encripted_text"
+			],
+			[
+				"Cip",
+				"CiphertextMessage"
+			],
+			[
+				"loa",
+				"load_words"
+			],
+			[
+				"Messa",
+				"Message"
+			],
+			[
+				"appl",
+				"apply_shift"
+			],
+			[
+				"Vali",
+				"validWords"
+			],
+			[
+				"text",
+				"textList"
+			],
+			[
+				"app",
+				"apply_shift"
+			],
+			[
+				"des",
+				"decrypt_message"
+			],
+			[
+				"me",
+				"message_text"
+			],
+			[
+				"get_me",
+				"get_message_text_encrypted"
+			],
+			[
+				"get_",
+				"get_valid_words"
+			],
+			[
+				"mes",
+				"message_text"
+			],
+			[
+				"vali",
+				"valid_words"
+			],
+			[
+				"valid",
+				"valid_words"
+			],
+			[
+				"ap",
+				"apply_shift"
+			],
+			[
+				"m",
+				"message"
+			],
+			[
+				"letter",
+				"letter"
+			],
+			[
+				"as",
+				"ascii_lowercase"
+			],
+			[
+				"cipe",
+				"cipherDict"
+			],
+			[
+				"ci",
+				"cipherDict"
+			],
+			[
+				"asc",
+				"ascii_uppercase"
+			],
+			[
+				"shift",
+				"shift_char"
+			],
+			[
+				"sel",
+				"shift_lowercase_dict"
+			],
+			[
+				"uppercase_",
+				"uppercase_dict_keys"
+			],
+			[
+				"uppercase_dict_s",
+				"uppercase_dict_shift"
+			],
+			[
+				"char",
+				"char"
+			],
+			[
+				"word",
+				"wordstrip"
+			],
+			[
+				"sle",
+				"shift_lowercase_dict"
+			],
+			[
+				"new",
+				"new_text"
+			],
+			[
+				"lett",
+				"letter"
+			],
+			[
+				"words",
+				"words"
+			],
+			[
+				"up",
+				"uppercase"
+			],
+			[
+				"str",
+				"strdict"
+			],
+			[
+				"allc",
+				"allcases_dict"
+			],
+			[
+				"lower",
+				"lowercase"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 307.0,
+		"last_filter": "Snippet: ",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: Function"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"((223/71)+(22/7))/2",
+			"(223/71)+(22/7)",
+			"(223/71)/(22/7)",
+			"22/7",
+			"223/71",
+			"4*(8/9)**2",
+			"import socket",
+			"'hello worl'",
+			"x",
+			"x = math.log(2)",
+			"import math ",
+			"python",
+			"clear",
+			"print \"hello\"",
+			"import numpy as np",
+			"print 'mithy python'"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/rojass20/Desktop/server.py",
+		"/Users/rojass20/Desktop/graph.py",
+		"/Users/rojass20/Desktop/tcpClient.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/4.Introduction to computational thinking and Data Science/6.00.2x files/PS2/ps2.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/4.Introduction to computational thinking and Data Science/6.00.2x files/PS2/ps2_visualize.py",
+		"/Users/rojass20/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/4.Introduction to computational thinking and Data Science/W2/histogramfun.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/4.Introduction to computational thinking and Data Science/6.00.2x files/basic_example.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/Final_exam_6_00_1_p3.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/Final_exam_6_00_1.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/Final_exam_6_00_1_p2.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/SubjectCode_Exception.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/Lecture_12_1_Objets.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/printMove.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/fib.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/### decision trees and tree search.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/ps7/ps7_skeleton.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/ps6/sandbox.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/ps6/ps6.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/ps6/words.txt",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/ps6/story.txt",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/W6_P1_caesar_cipher.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/W6_spell.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/W4_QM_Diamond_pricemodell.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/W6_practice_3.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/W6_coordinate.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/W6_class_clock.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/W6_practice_2.py",
+		"/Users/rojass20/Documents/2.Ausbildung und Beruf/B4000.Studium/3.MOOC/3.Introduction to Computer Science and Programming Using Python/6.00.1x Files/W6_practice.py"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"silvio",
+			"where",
+			"print",
+			"times1",
+			"testRobotMovement",
+			"getRan",
+			"self.enc",
+			"letter",
+			"e"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 173.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "README.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

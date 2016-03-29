@@ -83,7 +83,7 @@ class SimpleVirus(object):
         NoChildException if this virus particle does not reproduce.               
         """
 
-        self.maxBirthProb * (1 - popDensity)
+        DensityGrowth = self.maxBirthProb * (1 - popDensity)
 
 
 class Patient(object):
