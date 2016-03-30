@@ -56,13 +56,13 @@ class SimpleVirus(object):
         returns: True with probability self.getClearProb and otherwise returns
         False.
         """
-        if self.getClearProb >= 1.00:
+        ParticleIsClear = random.random()
+        print ParticleIsClear
+        if self.clearProb <= ParticleIsClear:
             return True
         else:
             return False
 
-
-    
     def reproduce(self, popDensity):
         """
         Stochastically determines whether this virus particle reproduces at a
@@ -82,9 +82,18 @@ class SimpleVirus(object):
         maxBirthProb and clearProb values as this virus. Raises a
         NoChildException if this virus particle does not reproduce.               
         """
+        try:
 
-        DensityGrowth = self.maxBirthProb * (1 - popDensity)
-
+            raise NameError("HiThere")
+        except NameError:
+            print "An exception"
+            raise
+        return self.maxBirthProb * (1 - popDensity)
+random.seed(0)
+HIV = SimpleVirus(0.001, 0.50)
+print HIV.getMaxBirthProb()
+print HIV.getClearProb()
+print HIV.doesClear()
 
 class Patient(object):
     """
