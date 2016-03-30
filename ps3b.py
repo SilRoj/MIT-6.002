@@ -14,7 +14,7 @@ class NoChildException(Exception):
     and ResistantVirus classes to indicate that a virus particle does not
     reproduce. You can use NoChildException as is, you do not need to
     modify/add any code.
-    """
+    """ 
 
 '''
 End helper code
@@ -56,9 +56,7 @@ class SimpleVirus(object):
         returns: True with probability self.getClearProb and otherwise returns
         False.
         """
-        ParticleIsClear = random.random()
-        print ParticleIsClear
-        if self.clearProb <= ParticleIsClear:
+        if random.random() <= self.clearProb:
             return True
         else:
             return False
@@ -82,18 +80,18 @@ class SimpleVirus(object):
         maxBirthProb and clearProb values as this virus. Raises a
         NoChildException if this virus particle does not reproduce.               
         """
-        try:
+        if random.random() <= ( self.maxBirthProb * ( 1 - popDensity ) ):
+            return SimpleVirus( self.maxBirthProb, self.clearProb )
+        else:
+            raise NoChildException('In reproduce()')
 
-            raise NameError("HiThere")
-        except NameError:
-            print "An exception"
-            raise
-        return self.maxBirthProb * (1 - popDensity)
 random.seed(0)
 HIV = SimpleVirus(0.001, 0.50)
+Zikka = SimpleVirus(0.5, 0.8)
 print HIV.getMaxBirthProb()
 print HIV.getClearProb()
 print HIV.doesClear()
+#HIV.reproduce(0.87)
 
 class Patient(object):
     """
@@ -135,7 +133,7 @@ class Patient(object):
         returns: The total virus population (an integer)
         """
 
-        # TODO        
+        return len(self.viruses)     
 
 
     def update(self):
@@ -156,11 +154,27 @@ class Patient(object):
         returns: The total virus population at the end of the update (an
         integer)
         """
+        NewVirusList = []
+        index = 0
+        for virus in self.viruses:
+            if virus.doesClear():
+                self.viruses.pop(index)
+            else:
+                popDensity = self.getTotalPop()/float(self.maxPop)
+                try:
+                    NewVirusList.append(virus.reproduce(popDensity))
+                except NoChildException:
+                    continue
+            index += 1
+        self.viruses = self.viruses + NewVirusList
 
+        return self.getTotalPop()
         # TODO
-
-
-
+NinoRata = Patient([HIV, Zikka], 100)
+NinoRata.getViruses()
+print NinoRata.getMaxPop()
+print NinoRata.getTotalPop()
+NinoRata.update()
 #
 # PROBLEM 3
 #
