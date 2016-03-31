@@ -245,14 +245,15 @@ class ResistantVirus(SimpleVirus):
         SimpleVirus.__init__(self, maxBirthProb, clearProb)
         self.maxBirthProb = maxBirthProb
         self.clearProb = clearProb
-        self.resistances = resistances
+        self.resistances = resistances.copy()
         self.mutProb = mutProb
 
     def getResistances(self):
         """
         Returns the resistances for this virus.
         """
-        return self.resistances
+        CopyResist = self.resistances.copy()
+        return CopyResist
     
     def getMutProb(self):
         """
@@ -446,40 +447,39 @@ def simulationWithDrug(numViruses, maxPop, maxBirthProb, clearProb, resistances,
              (a float between 0-1). 
     numTrials: number of simulation runs to execute (an integer)
     
-    """    
-    for trial in range(numTrials):
-        viruses = []
-        virusTotalList = [0] * 300
-        virusResistList = [0] * 300
-        for i in range(numViruses):
-            viruses.append(ResistantVirus(maxBirthProb, clearProb, resistances, mutProb))
+    """
 
-        tp = TreatedPatient(viruses, maxPop)
-
-        #virusTotal = []
-        #virusResist = []
-        for i in range(300):
-            if i > 149:
-                tp.addPrescription('guttagonol')
-            tp.update()
-            #virusTotal.append(tp.getTotalPop())
-            virusTotalList[i] += tp.getTotalPop()
-            #virusResist.append(tp.getResistPop('guttagonol'))
-            virusResistList[i] += tp.getResistPop('guttagonol')
-
-    avgVirusTotalList = [x / float(numTrials) for x in virusTotalList]
-    avgVirusResistList = [x / float(numTrials) for x in virusResistList]
-    
-    pylab.plot(avgVirusTotalList, label = 'Total virus count')
-    pylab.plot(avgVirusResistList, label = 'Guttagonol-resistant count')
-    pylab.xlabel('Time step')
-    pylab.ylabel('Virus count')
-    pylab.title('Virus resistance simulation')
+    steps = 300
+    treatOnStep = 149
+    trialResultsTot = [[] for s in range(steps)]
+    trialResultsRes = [[] for s in range(steps)]
+    for __ in range(numTrials):
+        viruses = [ResistantVirus(maxBirthProb, clearProb, 
+                                  resistances.copy(), mutProb)
+                   for v in range(numViruses)]
+        patient = TreatedPatient(viruses, maxPop)
+        for step in range(steps):
+            if step == treatOnStep:
+                patient.addPrescription("guttagonol")
+            patient.update()
+            trialResultsTot[step].append(patient.getTotalPop())
+            trialResultsRes[step].append(patient.getResistPop(["guttagonol"]))
+    resultsSummaryTot = [sum(l) / float(len(l)) for l in trialResultsTot]
+    resultsSummaryRes = [sum(l) / float(len(l)) for l in trialResultsRes]
+    print resultsSummaryTot
+    print resultsSummaryRes
+    pylab.plot(resultsSummaryTot, label="Total Virus Population")
+    pylab.plot(resultsSummaryRes, label="Resistant Virus Population")
+    pylab.title("ResistantVirus simulation")
+    pylab.xlabel("time step")
+    pylab.ylabel("# viruses")
     pylab.legend()
     pylab.show()
+    
 
 
-simulationWithDrug(1, 10, 1.0, 0.0, {}, 1.0, 5)
-
+#simulationWithDrug(1, 10, 1.0, 0.0, {}, 1.0, 5)
+simulationWithDrug(1, 20, 1.0, 0.0, {"guttagonol": True}, 1.0, 5)
+#simulationWithDrug(75, 100, .8, 0.1, {"guttagonol": True}, 0.8, 1)
 
 
