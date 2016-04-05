@@ -9,7 +9,7 @@ def rollN(n):
         result = result + str(rollDie())
     return result
 
-print rollN(5)
+print rollN(3)
 
 def getTarget(goal):
     numTries = 0
@@ -38,4 +38,15 @@ def atLeastOneOne(numRolls, numTrials):
         fracSuccess = numSuccess/float(numTrials)
     print fracSuccess
 
-atLeastOneOne(10, 1000)
+#atLeastOneOne(3, 1000)
+
+def atLeasttwoSix(numRolls, numTrials):
+    numSuccess = 0
+    for i in range(numTrials):
+        rolls = rollN(numRolls)
+        if '66' in rolls or '616' in rolls or '626' in rolls or '636' in rolls or '646' in rolls or '656' in rolls:
+            numSuccess += 1
+        fracSuccess = numSuccess/float(numTrials)
+    print fracSuccess
+
+atLeasttwoSix(3,10000)
